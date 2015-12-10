@@ -1,9 +1,8 @@
 '''
-FEC Modular Input Script
-
 Copyright (C) 2015 Splunk, Inc.
-dgreenwood@splunk.com
 All Rights Reserved
+
+Endpoints FEC schedules/schedule*
 
 '''
 import os
@@ -159,7 +158,7 @@ class Fec(object):
                 #last_index is a primary key of records
                 last_index = result[pk_field]
                 #print results to Splunk
-                print_xml_single_instance_mode(str(result))
+                print_xml_single_instance_mode(json.dumps(result))
 
 
         except KeyError:

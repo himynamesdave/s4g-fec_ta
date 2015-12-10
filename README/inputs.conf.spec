@@ -6,5 +6,5 @@ fec_key = <value>
 get_schedules_schedule_a = <value>
 * true | false
 get_schedules_schedule_b = <value>
-
+* seconds
 polling_interval = <value>
